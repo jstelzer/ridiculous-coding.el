@@ -6,7 +6,7 @@ A port of [ridiculous_coding](https://github.com/jotson/ridiculous_coding) (Godo
 
 ### Demo
 
-[demo](./media/ridiculous-coding.gif)
+![Ridiculous Coding Demo](./media/ridiculous-coding.gif)
 
 ## Features
 
