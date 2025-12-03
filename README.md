@@ -165,9 +165,12 @@ All options are in the `ridiculous-coding` customize group:
 
 ## Credits
 
+- Made by a human having too much fun,
+  with occasional assistance from AI gremlins who absolutely encouraged the chaos.
 - Original concept: [jotson/ridiculous_coding](https://github.com/jotson/ridiculous_coding) for Godot
 - Emacs port: Pair-programmed with Claude Code
 - Code review: ChatGPT (caught some good edge cases)
+
 
 ## License
 
