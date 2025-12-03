@@ -162,4 +162,4 @@ Do whatever you want with it. Make your editor ridiculous.
 
 ---
 
-*"This is absolutely 'real package on MELPA' territory."* — ChatGPT, 2024
+*"This is absolutely 'real package on MELPA' territory."* — ChatGPT, 2025
