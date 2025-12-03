@@ -46,7 +46,7 @@ A port of [ridiculous_coding](https://github.com/jotson/ridiculous_coding) (Godo
 
 ## Installation
 
-1. Copy `personal/ridiculous-coding.el` to your load path
+1. Copy `ridiculous-coding.el` to your load path
 2. Optionally add sounds to `~/.emacs.d/sounds/ridiculous/{typing,delete,save,combo}/`
 3. Optionally add sprite sheets to `~/.emacs.d/images/ridiculous/`
 
@@ -163,3 +163,6 @@ Do whatever you want with it. Make your editor ridiculous.
 ---
 
 *"This is absolutely 'real package on MELPA' territory."* — ChatGPT, 2025
+
+## NB
+This is not for serious production editing. It’s for screenshots, streams, and making your coworkers question your life choices.
