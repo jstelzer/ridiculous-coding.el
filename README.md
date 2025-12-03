@@ -79,21 +79,21 @@ or....
 
 ## Usage
 
-| Command | Description |
-|---------|-------------|
-| `M-x ridiculous-coding-mode` | Toggle for current buffer |
-| `M-x global-ridiculous-coding-mode` | Toggle globally (prog + text modes) |
-| `M-x ridiculous-coding-set-intensity` | Set to low/medium/high/insane |
-| `M-x ridiculous-coding-toggle-images` | Toggle sprite animations |
+| Command                               | Description                         |
+|---------------------------------------|-------------------------------------|
+| `M-x ridiculous-coding-mode`          | Toggle for current buffer           |
+| `M-x global-ridiculous-coding-mode`   | Toggle globally (prog + text modes) |
+| `M-x ridiculous-coding-set-intensity` | Set to low/medium/high/insane       |
+| `M-x ridiculous-coding-toggle-images` | Toggle sprite animations            |
 
 ### Intensity Levels
 
-| Level | Probability | Vibe |
-|-------|-------------|------|
-| low | 5% | Subtle sparkles |
-| medium | 15% | Default, noticeable but not overwhelming |
-| high | 30% | Frequent explosions |
-| insane | 60% | Constant chaos |
+| Level  | Probability | Vibe                                     |
+|--------|-------------|------------------------------------------|
+| low    | 5%          | Subtle sparkles                          |
+| medium | 15%         | Default, noticeable but not overwhelming |
+| high   | 30%         | Frequent explosions                      |
+| insane | 60%         | Constant chaos                           |
 
 ## Test Commands
 
@@ -155,13 +155,13 @@ All options are in the `ridiculous-coding` customize group:
 
 ## Terminal vs GUI
 
-| Feature | Terminal | GUI |
-|---------|----------|-----|
-| Text particles | ✓ | ✓ |
-| Rainbow/afterimage | ✓ | ✓ |
-| Screen shake | ✓ | ✓ |
-| Sprite animations | ✗ | ✓ |
-| Sounds | ✓ | ✓ |
+| Feature            | Terminal | GUI |
+|--------------------|----------|-----|
+| Text particles     | ✓        | ✓   |
+| Rainbow/afterimage | ✓        | ✓   |
+| Screen shake       | ✓        | ✓   |
+| Sprite animations  | ✗        | ✓   |
+| Sounds             | ✓        | ✓   |
 
 ## Credits
 
