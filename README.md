@@ -4,7 +4,9 @@
 
 A port of [ridiculous_coding](https://github.com/jotson/ridiculous_coding) (Godot plugin) to Emacs. Makes your coding experience absurdly dramatic with explosions, screen shake, sound effects, combo counters, and particle mayhem.
 
-<video src="https://github.com/jstelzer/ridiculous-coding.el/media/ridiculous-mode.mp4" controls width="640"></video>
+### Demo
+
+https://github.com/jstelzer/ridiculous-coding.el/blob/master/media/ridiculous-mode.mp4
 
 ## Features
 
