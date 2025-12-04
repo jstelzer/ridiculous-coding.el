@@ -65,11 +65,15 @@ A port of [ridiculous_coding](https://github.com/jotson/ridiculous_coding) (Godo
 ;; Or go full chaos:
 (global-ridiculous-coding-mode 1)
 ```
-or....
+or.... if you want the media
 
 ``` elisp
+;; Ridiculous coding effects - make coding absurdly dramatic
+;; Toggle: M-x ridiculous-coding-mode
+;; Full chaos: M-x global-ridiculous-coding-mode
 (use-package ridiculous-coding
-  :straight (:type git :host github :repo "jstelzer/ridiculous-coding.el")
+  :straight (:type git :host github :repo "jstelzer/ridiculous-coding.el"
+             :files (:defaults "sounds" "images"))
   :commands (ridiculous-coding-mode
              global-ridiculous-coding-mode
              ridiculous-coding-set-intensity))

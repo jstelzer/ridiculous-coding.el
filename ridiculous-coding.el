@@ -125,9 +125,6 @@ Falls back to text effects in terminal."
 (defvar-local ridiculous-coding--last-action nil
   "Last action type: typing, delete, save.")
 
-(defvar ridiculous-coding--sound-process nil
-  "Current sound process (to avoid overlap).")
-
 ;;; ============================================================================
 ;;; Platform Detection & Sound
 ;;; ============================================================================
@@ -160,21 +157,16 @@ Sounds are loaded from `ridiculous-coding-sounds-directory'/CATEGORY/."
            (sound (and files (nth (random (length files)) files)))
            (cmd (ridiculous-coding--sound-command)))
       (when sound
-        ;; Kill previous sound to avoid cacophony
-        (when (and ridiculous-coding--sound-process
-                   (process-live-p ridiculous-coding--sound-process))
-          (delete-process ridiculous-coding--sound-process))
-        (setq ridiculous-coding--sound-process
-              (pcase (ridiculous-coding--platform)
-                ('macos
-                 (start-process "ridiculous-sound" nil cmd
-                                "-v" (format "%.1f" ridiculous-coding-sound-volume)
-                                sound))
-                ('linux
-                 ;; paplay doesn't have easy volume, aplay has no volume
-                 ;; Could use pactl or sox for volume control
-                 (start-process "ridiculous-sound" nil cmd sound))
-                (_ nil)))))))
+        ;; Let sounds overlap for maximum chaos!
+        ;; Don't kill previous sounds - that caused them to be silenced
+        ;; before they could actually play when typing rapidly.
+        (pcase (ridiculous-coding--platform)
+          ('macos
+           (start-process "ridiculous-sound" nil cmd
+                          "-v" (format "%.1f" ridiculous-coding-sound-volume)
+                          sound))
+          ('linux
+           (start-process "ridiculous-sound" nil cmd sound)))))))
 
 ;;; ============================================================================
 ;;; Visual Effects: Particles & Explosions
