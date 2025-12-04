@@ -139,7 +139,7 @@ Falls back to text effects in terminal."
 (defun ridiculous-coding--sound-command ()
   "Return the sound playback command for current platform."
   (pcase (ridiculous-coding--platform)
-    ('macos "afplay")
+    ('macos (executable-find "afplay"))
     ('linux (or (executable-find "paplay")
                 (executable-find "aplay")
                 (executable-find "play")))  ; sox
@@ -162,9 +162,7 @@ Sounds are loaded from `ridiculous-coding-sounds-directory'/CATEGORY/."
         ;; before they could actually play when typing rapidly.
         (pcase (ridiculous-coding--platform)
           ('macos
-           (start-process "ridiculous-sound" nil cmd
-                          "-v" (format "%.1f" ridiculous-coding-sound-volume)
-                          sound))
+           (start-process "ridiculous-sound" nil cmd "-v" "1" sound))
           ('linux
            (start-process "ridiculous-sound" nil cmd sound)))))))
 
@@ -1080,7 +1078,8 @@ screen shake, sounds, and combo counters."
       (run-at-time (* i 0.15) nil
                    (lambda (c)
                      (ridiculous-coding--key-puff c))
-                   (nth i chars)))))
-
-(provide 'ridiculous-coding)
-;;; ridiculous-coding.el ends here
+                   (nth i chars)))))   
+                                       
+(provide 'ridiculous-coding)           
+;;; ridiculous-coding.el ends here     
+; this is a test. why isn't it working????
