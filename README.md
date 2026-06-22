@@ -48,6 +48,19 @@ A port of [ridiculous_coding](https://github.com/jotson/ridiculous_coding) (Godo
 
 ## Installation
 
+### From a local clone
+
+```sh
+git clone https://github.com/jstelzer/ridiculous-coding.el
+cd ridiculous-coding.el
+./install.sh          # symlink into ~/.emacs.d/lisp (use --copy to copy instead)
+```
+
+The script puts the package on your load path and prints the snippet to add to
+your init file. `sounds/` and `images/` come along automatically.
+
+### Manual
+
 1. Copy `ridiculous-coding.el` to your load path
 2. Optionally add sounds to `~/.emacs.d/sounds/ridiculous/{typing,delete,save,combo}/`
 3. Optionally add sprite sheets to `~/.emacs.d/images/ridiculous/`
